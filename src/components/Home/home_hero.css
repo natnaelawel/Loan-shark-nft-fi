@@ -1,0 +1,133 @@
+.section-module--hero {
+    align-items: center;
+    background: linear-gradient(180deg, #383651, #17162c);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -6rem;
+    padding: 12rem 0 6rem;
+}
+
+.background-module--background {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+}
+
+.background-module--hero:before {
+    background: rgba(203, 43, 131, .12);
+    filter: blur(87px);
+    left: 15%;
+    margin: -229.5px 0 0 -229.5px;
+    top: 300px;
+    width: 459px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    z-index: 2;
+}
+
+.background-module--hero:after {
+    background: rgba(126, 91, 214, .29);
+    filter: blur(130.611px);
+    left: 99%;
+    margin: -293.5px 0 0 -293.5px;
+    top: 450px;
+    width: 587px;
+}
+
+.background-module--hero:after,
+.background-module--hero:before {
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    z-index: 2;
+}
+
+.background-module--hero div {
+    aspect-ratio: 1/1;
+    background: rgba(0, 163, 208, .14);
+    border-radius: 100%;
+    content: "";
+    filter: blur(72px);
+    left: 50%;
+    margin: -219px 0 0 -219px;
+    pointer-events: none;
+    position: absolute;
+    top: 750px;
+    transform: translateZ(0);
+    width: 438px;
+    z-index: 2;
+}
+
+.hero-title-module--title {
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: -.5px;
+    line-height: 67px;
+    margin-bottom: 24px;
+    text-align: center;
+    color: white;
+    text-align: left;
+}
+
+.hero-text-module--text {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 28px;
+    margin-bottom: 40px;
+    opacity: .68;
+    text-align: center;
+    color: white;
+    text-align: left;
+}
+
+.text-white {
+    color: white !important;
+    text-decoration: none;
+}
+
+.link-button-module--button {
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 700;
+    gap: .75rem;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .1px;
+    line-height: 24px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-decoration: none;
+    transition: border-color .2s ease-in-out, background-color .2s ease-in-out, color .2s ease-in-out;
+    white-space: nowrap;
+}
+
+.react-tabs__tab:after {
+    background: linear-gradient(90deg, #7e5bd6, rgba(126, 91, 214, 0));
+    bottom: 0;
+    content: "";
+    height: 5px;
+    left: 0;
+    position: absolute;
+    transition: width .2s ease-in-out;
+    width: 100%;
+    width: 0;
+}
