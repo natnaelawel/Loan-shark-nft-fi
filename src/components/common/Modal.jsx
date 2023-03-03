@@ -37,10 +37,5 @@ function Modal({ children, isOpen, onClose }) {
       )
     : null
 }
-Modal.prototype = {
-  children: null,
-  isOpen: false,
-  onClose: null,
-}
 
 export default Modal

@@ -4,10 +4,7 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
     <header
-      className={clsx(
-        'flex w-full items-center h-24 justify-center top-0 left-0 right-0 sticky',
-        'border',
-      )}
+      className={clsx('flex w-full items-center h-24 justify-center top-0 left-0 right-0 sticky')}
       style={{
         backgroundColor: `rgba(22, 21, 45, ${'1'})`,
       }}
@@ -23,7 +20,7 @@ const Navbar = () => {
             loading='lazy'
           />
         </a>
-        <nav className='hidden font-Lato flex-[3] xl:flex-[2] lg:flex border'>
+        <nav className='hidden font-Lato flex-[3] xl:flex-[2] lg:flex'>
           <ul className='flex list-none justify-between items-center py-6 text-white gap-x-5 w-full'>
             <li>
               <Link

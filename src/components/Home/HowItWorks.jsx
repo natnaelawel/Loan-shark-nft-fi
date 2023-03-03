@@ -29,7 +29,7 @@ const HowItWorks = () => {
   ]
 
   return (
-    <section className=' py-48 flex justify-center'>
+    <section className=' pt-48 flex justify-center'>
       <div className=' max-w-[1140px] w-full relative z-20 text-center flex flex-col items-center'>
         <h2 className='font-semibold text-4xl text-navy leading-[53px] font-Lato'>How it works</h2>
         <p className=' max-w-3xl text-center text-navy_light font-normal'>
@@ -43,7 +43,7 @@ const HowItWorks = () => {
                 color: 'blue !important',
               },
             }}
-            className='text-primary border-primary border py-4 px-8 bg-primary/10 font-medium hover:bg-primary !hover:text-gray-50'
+            className='text-primary border-primary border py-4 px-8 bg-primary/10 font-medium hover:bg-primary hover:text-white'
             href='/how-it-works/'
           >
             Learn more
@@ -95,12 +95,12 @@ const HowItWorks = () => {
             </li>
           </ul>
           <div
-            className='w-full my-10'
+            className='w-full my-14'
             role='tabpanel'
             id='panel:R229:0'
             aria-labelledby='tab:R229:0'
           >
-            <div className='w-full overflow-hidden '>
+            <div className='w-full flex flex-col gap-y-10 my-10'>
               <ol className='font-Lato gap-y-10 my-10  flex flex-col relative overflow-hidden '>
                 {borrowersList.map((item, i) => {
                   return (
@@ -159,9 +159,9 @@ const HowItWorks = () => {
                   )
                 })}
               </ol>
-              <div className='buttons-module--buttons--f56b0 w-1/2 how-it-works-module--buttons--76540'>
+              <div className='self-start px-24 my-10'>
                 <a
-                  className='link-button-module--button--1a818 link-button-module--primary--ad20b link-button-module--lg--9bc62 link-button-module--border--f10fc'
+                  className='border-primary border-2 hover:bg-primary hover:text-white font-bold text-primary py-4 px-10'
                   href='/how-it-works/'
                 >
                   More about borrowing
@@ -169,18 +169,6 @@ const HowItWorks = () => {
               </div>
             </div>
           </div>
-          <div
-            className='react-tabs__tab-panel'
-            role='tabpanel'
-            id='panel:R229:1'
-            aria-labelledby='tab:R229:1'
-          ></div>
-          <div
-            className='react-tabs__tab-panel'
-            role='tabpanel'
-            id='panel:R229:2'
-            aria-labelledby='tab:R229:2'
-          ></div>
         </div>
       </div>
     </section>
