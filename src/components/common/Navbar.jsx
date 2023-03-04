@@ -1,19 +1,36 @@
+import { useState, useEffect } from 'react'
 import clsx from 'clsx'
 import { Link } from 'react-router-dom'
 // import './navbar.css'
 const Navbar = () => {
+  const [scrollPosition, setScrollPosition] = useState(0)
+  const handleScroll = () => {
+    const position = window.pageYOffset
+    setScrollPosition(position)
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true })
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
     <header
-      className={clsx('flex w-full items-center h-24 justify-center top-0 left-0 right-0 sticky')}
+      className={clsx(
+        'flex w-full items-center h-24 justify-center top-0 left-0 right-0 !fixed !z-50',
+      )}
       style={{
-        backgroundColor: `rgba(22, 21, 45, ${'1'})`,
+        backgroundColor: `rgba(22, 21, 45, ${0.005 * scrollPosition})`,
       }}
     >
       <div className='w-11/12 sm:w-10/12 xl:w-3/4 flex justify-between items-center'>
         <a className='text-inherit flex-[1]' href='/' aria-current='page'>
           <img
             // className='plain-image-module--image'
-            src='//images.ctfassets.net/21yktilggb3f/4stgUPiFxcurCYUf40mfQx/755520e8150318e1b1de08826b9982bb/nftfi-logo.svg'
+            src='/images/nftfi-logo.svg'
             alt='NFTfi'
             width='91'
             height='35'

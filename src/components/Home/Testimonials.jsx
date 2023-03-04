@@ -4,10 +4,10 @@ import './testmonials.css'
 const Testimonials = () => {
   return (
     <section className='relative flex justify-center items-center my-12 min-h-[750px]'>
-      <div className='relative z-20  container-module--container--3a7e6 container-module--constrained--28f48 testimonials-module--container--90057'>
+      <div className='relative z-20  flex h-[400px]  w-full max-w-[600px] xl:max-w-[700px] justify-center mx-5  container-module--container--3a7e6 container-module--constrained--28f48 testimonials-module--container--90057'>
         <div className='testimonials-module--wrapper flex  gap-x-2 items-center'>
           <button
-            className='h-8 w-8 hover:bg-primary border-primary border-2 hover:text-white group'
+            className='h-8 w-8 text-primary hover:bg-primary border-primary border-2 hover:text-white group'
             aria-label='Previous button'
           >
             <svg
@@ -19,18 +19,15 @@ const Testimonials = () => {
               <path d='M10 6L5 11L10 16' stroke='currentColor' strokeWidth='1.5'></path>
             </svg>
           </button>
-          <div className='!bg-gray-50 shadow-2xl p-10 !z-20 h-[400px] items-stretch'>
-            <div className='swiper-wrapper transition transform-[translate3d(-1376px, 0px, 0px)] h-full px-10 flex'>
+          <div className='!bg-gray-50 shadow-2xl p-5 !z-20 w-full items-stretch h-full'>
+            <div className='swiper-wrapper h-full flex'>
               {[1].map((item, indx) => {
                 return (
                   <div
                     key={item}
-                    style={{
-                      width: '600px',
-                    }}
-                    className='flex flex-col gap-y-10 text-center flex-1 text-2xl  justify-center'
+                    className='flex flex-col text-center flex-1 text-2xl  justify-center w-full'
                   >
-                    <div className='flex flex-col gap-y-10'>
+                    <div className='w-full flex flex-col gap-y-10'>
                       <p className='testimonials-module--text--c7ee9'>
                         My experience with NFTfi has been amazing. Once you realize that you can get
                         money from your &quot;illiquid&quot; NFT and still keep it, it&apos;s a
@@ -46,7 +43,7 @@ const Testimonials = () => {
           </div>
 
           <button
-            className='h-8 w-8 hover:bg-primary border-primary border-2 hover:text-white group'
+            className='h-8 w-8 text-primary hover:bg-primary border-primary border-2 hover:text-white group'
             aria-label='Previous button'
           >
             <svg
@@ -59,12 +56,12 @@ const Testimonials = () => {
               <path d='M5 6L10 11L5 16' stroke='currentColor' strokeWidth='1.5'></path>
             </svg>
           </button>
-          <div className='swiper-pagination testimonials-module--pagination--0a548 swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal'>
+          {/* <div className='swiper-pagination testimonials-module--pagination--0a548 swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal'>
             <span className='swiper-pagination-bullet'></span>
             <span className='swiper-pagination-bullet'></span>
             <span className='swiper-pagination-bullet swiper-pagination-bullet-active'></span>
             <span className='swiper-pagination-bullet'></span>
-          </div>
+          </div> */}
         </div>
       </div>
       <div

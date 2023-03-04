@@ -29,7 +29,7 @@ const HowItWorks = () => {
   ]
 
   return (
-    <section className=' pt-48 flex justify-center'>
+    <section className='!overflow-y-hidden pt-48 flex justify-center'>
       <div className=' max-w-[1140px] w-full relative z-20 text-center flex flex-col items-center'>
         <h2 className='font-semibold text-4xl text-navy leading-[53px] font-Lato'>How it works</h2>
         <p className=' max-w-3xl text-center text-navy_light font-normal'>
