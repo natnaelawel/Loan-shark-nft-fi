@@ -5,7 +5,7 @@ import clsx from 'clsx'
 const StatsLayout = () => {
   const location = useLocation()
   return (
-    <section className='w-full flex flex-col justify-center stats-page'>
+    <section className='w-full flex flex-col justify-center stats-page items-center'>
       <div className='h-72  bg-navy w-full flex justify-center'>
         <div className='flex flex-col w-5/6 justify-between'>
           <div className='page-header flex flex-col gap-y-2 py-5'>
@@ -54,7 +54,7 @@ const StatsLayout = () => {
           </nav>
         </div>
       </div>
-      <div className='w-5/6 flex justify-center items-center'>
+      <div className='w-5/6 flex justify-center items-center '>
         <Outlet />
       </div>
     </section>

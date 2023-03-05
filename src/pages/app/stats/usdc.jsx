@@ -1,8 +1,12 @@
 import React from 'react'
-// import LendComponent from '../../../components/App/lend/Lend'
+import StatsUSDCComponent from '../../../components/App/stats/StatsUSDCComponent'
 
 const StatsUSDCPage = () => {
-  return <div className='min-h-screen w-screen'>{/* <LendComponent /> */}</div>
+  return (
+    <div className='min-h-screen w-screen'>
+      <StatsUSDCComponent />
+    </div>
+  )
 }
 
 export default StatsUSDCPage
