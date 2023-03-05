@@ -15,6 +15,8 @@ import CollectionsLayout from './components/App/collections/CollectionLayout'
 import { CollectionsPage } from './pages/app/collections'
 import StatsLayout from './components/App/stats/StatsLayout'
 import { StatsDAIPage, StatsUSDCPage, StatsWETHPage } from './pages/app/stats'
+import AddressDetailComponent from './components/App/lend/AssetDetailsComponent'
+import 'react-tooltip/dist/react-tooltip.css'
 
 function App() {
   return (
@@ -45,6 +47,7 @@ function App() {
         <Route path='blog' element={<HomePage />} />
         <Route path='faq' element={<HomePage />} />
         <Route path='assets/private-offer' element={<PrivateOfferPage />} />
+        <Route path='assets/:address/:id' element={<AddressDetailComponent />} />
         {/* <Route path='*' element={<Navigate to='/app/lend' replace={true} />} /> */}
       </Route>
       <Route path='/' element={<BaseLayout />}>
