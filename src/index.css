@@ -14,3 +14,11 @@
       text-decoration: none;
       /* color: white; */
   }
+
+  body {
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size: 14px;
+      background: #fff;
+  }
