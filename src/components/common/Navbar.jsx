@@ -79,14 +79,13 @@ const Navbar = () => {
                 // 'after:content-[""] after:bg-[linear-gradient(90deg,#7e5bd6,rgba(126,91,214,0))] after:absolute after:bottom-0 after:h-1.25 after:w-0 after:transition=["width .2s ease-in-out"] after:hoverw-full',
               )}
             >
-              <a
-                href='https://app.nftfi.com/borrow/assets'
-                target='_blank'
-                rel='noreferrer'
+              <Link
+                // href='https://app.nftfi.com/borrow/assets'
+                to='/app/borrow/assets'
                 className='bg-[#7e5bd6] inline-flex px-5 py-3 h-full w-full text-white leading-6 font-Lato  cursor-pointer font-bold gap-x-3 justify-center text-base decoration-transparent'
               >
                 Open dApp
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

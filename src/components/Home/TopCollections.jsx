@@ -80,7 +80,7 @@ const TopCollections = () => {
                           <div
                             aria-hidden='true'
                             data-placeholder-image=''
-                            style={{ opacity: '0', transition: 'opacity 500ms linear 0s;' }}
+                            style={{ opacity: '0', transition: 'opacity 500ms linear 0s' }}
                           ></div>
                         </div>
                       </div>

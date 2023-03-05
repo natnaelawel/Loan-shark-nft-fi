@@ -105,7 +105,7 @@ const HowItWorks = () => {
                 {borrowersList.map((item, i) => {
                   return (
                     <li
-                      key={item}
+                      key={item.id}
                       className={clsx(
                         'cursor-pointer  list-none list flex items-start justify-between gap-x-10 group relative ',
                       )}
