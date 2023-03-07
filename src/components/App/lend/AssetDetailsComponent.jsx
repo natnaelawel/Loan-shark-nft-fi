@@ -5,6 +5,7 @@ import { Link, useParams } from 'react-router-dom'
 import { Tooltip } from 'react-tooltip'
 import ReceivedOffersList from './ReceivedOffersList'
 import ProjectAverages from './ProjectAverages'
+import MakeAnOffer from './MakeAnOffer'
 
 const AddressDetailComponent = () => {
   const params = useParams()
@@ -452,42 +453,7 @@ const AddressDetailComponent = () => {
                 </div>
               </div>
             </div>
-            <div className='bg-[#5c113e] p-5'>
-              <div
-                id='asset-make-offer-panel'
-                className='asset-make-offer-panel lend panel make-offer flex flex-col h-full gap-y-3'
-              >
-                <div className='title font-semibold font-Lato'>Make offer</div>
-                <div className='steps step-0 flex h-full'>
-                  <div className='step summary flex flex-col h-full flex-1 gap-y-2'>
-                    <div className='sub-title font-Roboto text-gray-300'>Desired Terms:</div>
-                    <div className='terms flex flex-col gap-y-2 flex-1 h-full'>
-                      <div className='term accent-color-background bg-secondary py-1 px-3 rounded-full max-w-max'>
-                        <span>
-                          For <strong>6 wETH</strong>
-                        </span>
-                      </div>
-                      <div className='term accent-color-background bg-secondary py-1 px-3 rounded-full max-w-max'>
-                        <span>
-                          Over <strong>90 days</strong>
-                        </span>
-                      </div>
-                      <div className='term accent-color-background bg-secondary py-1 px-3 rounded-full max-w-max'>
-                        Any APR
-                      </div>
-                    </div>
-                    <div className='buttons'>
-                      <button
-                        id='make-offer-button-1 '
-                        className='btn w-full py-2 px-5 text-center bg-secondary text-white font-Lato'
-                      >
-                        Make offer
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <MakeAnOffer />
           </div>
         </div>
         <div className='py-2'>
